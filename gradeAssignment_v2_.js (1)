@@ -1,0 +1,33 @@
+//create a program that prompts user to input their score. 
+//use conditional ternary operator.
+
+let score = prompt("Enter your score:");
+
+let grade = score >=97?"1.00":
+    score >=94?"1.25": 
+    score>=91?"1.50": 
+    score>=88? "1.75": 
+    score >=85? "2.00": 
+    score >=82? "2.25": 
+    score>=79? "2.50":
+    score >=76?"2.75": 
+    score === 75?"3.00":
+    score >=72? "4.00": "5.00";
+
+
+//if else
+let finalRemarks;
+if (score >=90) {
+  finalRemarks ="HIGH PASS,Candidate for cumlaude";
+  }else if(score >=80) {
+    finalRemarks="AVERAGE PASS";
+  }else if (score >= 75){
+    finalRemarks="LOW PASS";
+  }else{
+    console.log("FAILED,Needs improvement ");
+  
+    
+   }
+   
+   console.log("Your equivalent grade is" + grade  + finalRemarks);
+
